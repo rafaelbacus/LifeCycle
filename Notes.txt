@@ -1,0 +1,55 @@
+LifeCycle
+------------------
++Screens
+    Main 
+        Start/Stop button for Monitoring
+        User Menu button
+        Contacts Menu button
+
+    User Menu
+        Name
+        Age
+        Blood Type
+        Height (ft/cm)
+        Weight (lbs/kg)
+        Medications
+        Conditions
+        Allergies
+        
+    Contacts Menu
+        List of Contacts
+        Add Contact button
+        Delete Contact button (long press)
+        
++Backend
+    Database (SQLite)
+        Contact
+            ContactID
+            Name
+            Number
+            Message
+            
+        ContactSession
+            ContactSessionID
+            ContactID
+            SessionID
+            
+        Session
+            SessionID
+            Date
+            StartTime (java.sql.Time)
+            EndTime (java.sql.Time)
+            Duration (seconds)
+            StartLocation
+            EndLocation
+            AccidentID (nullable)
+            
+        Accident
+            AccidentID
+            StartTime
+            EndTime
+            ThresholdValue
+            RadianValue
+            MaxAccelValue
+            MinAccelValue
+                
